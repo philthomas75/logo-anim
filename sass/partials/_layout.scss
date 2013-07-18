@@ -1,0 +1,106 @@
+@import "compass/css3/transform";
+
+
+// Basic grid
+.wrapper {
+  @include container;
+  // @include susy-grid-background;
+}
+
+header {
+
+}
+
+
+.logo {
+  display: block;
+  width:100px;
+  height:100px;
+  background-color: #FF0000;
+  position:absolute;
+  @include transition(all 1s ease-out);
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMDAgMzAwIiB2ZXJzaW9uPSIxLjEiPgogICAgICAgICAgICA8dGl0bGU+UGxhaW5SZXNwb25zaXZlTG9nbzZAMng8L3RpdGxlPgogICAgICAgICAgICA8ZGVmcz4KICAgICAgICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNENzAwNkUiIG9mZnNldD0iMCUiLz4KICAgICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjNjQwNDJGIiBvZmZzZXQ9IjEwMCUiLz4KICAgICAgICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICAgICAgICA8L2RlZnM+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik01MS4yMzUyOTQxIDI0Ny44IEMzNC41OTQxNjM1IDIzMS42IDIyIDIxMS4yIDE1IDE4OC4zIEwzNS42MjQ3MjA4IDE4OC4zIEwzNS42MjQ3MjA4IDEzNy40IEwxMTcuODA4MjY1IDEzNy40IEMxMzUuMTUwNTM4IDEzNy40IDE0OC41IDEzMy42IDE1Ny43IDEyNi4xIEMxNjcuMDM0MDI5IDExOC41IDE3MS43IDEwNy43IDE3MS43IDkzLjggQzE3MS42NzY0NzEgODAuNCAxNjcuMiA2OS43IDE1OC4zIDYxLjggQzE0OS40MjMxNzkgNTMuOCAxMzcuNSA0OS45IDEyMi40IDQ5LjkgTDQ4LjU1MDI4MDMgNDkuOSBDNzMuODkwNjcwNyAyMy43IDEwOS4zIDcuNSAxNDguNSA3LjUgQzIyNS41NTAzMSA3LjUgMjg4IDcwLjIgMjg4IDE0Ny41IEMyODggMjA0LjUgMjU0LjEgMjUzLjUgMjA1LjQgMjc1LjQgTDE3Ni4yMzgyOTcgMjM0LjUgQzE5OS4wODg0MjMgMjI5LjQgMjEwLjUgMjE1LjUgMjEwLjUgMTkyLjcgQzIxMC41MTMzMTQgMTc5LjQgMjA2LjIgMTY4LjggMTk3LjUgMTYwLjkgQzE4OC44NTgwMzEgMTUzIDE3Ny4yIDE0OSAxNjIuNiAxNDkgTDUxLjIzNTI5NDEgMTQ5IFogTTE0OC41MTQ3MDYgMjg3LjUgQzEyMi44MzgwMzIgMjg3LjUgOTguOCAyODAuNSA3OC4xIDI2OC40IEw3OC4xMTc2NjA0IDIzNi4xIEwxNDYuNDQzNjc1IDIzNi4xIEwxODAuNTExMDI0IDI4My44IEMxNzAuMjM2Mjc1IDI4Ni4yIDE1OS41IDI4Ny41IDE0OC41IDI4Ny41IFogTTE0OC41MTQ3MDYgMjg3LjUiIGlkPSJPdmFsIDEiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtMSkiLz4KICAgICAgICAgIDwvc3ZnPg==);
+  // text-indent: -9999px;
+}
+  
+  h1.a {
+    font-family: abel;
+    font-size: 3.5em;
+    width:600px;
+    // position:absolute;
+    margin:55px 0 0 2px;
+    // pointer-events: none; 
+  }
+
+.logo:hover {
+  /*background-color: #FFF000;*/
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  @include rotate(360deg);
+}
+
+
+nav {
+  // @include pre(4);
+  // background-color: $bgrd;
+  ul {
+    list-style-type: none;
+    li {
+      background-color: blue;
+      // float: left;
+      display: inline-block;
+      padding: 0.3em;
+      // border-left: 1px dashed #d8d9d9;
+      a {
+        color: $topnav-txt;
+        font-family: $sans-serif;
+        font-size: $topnavsize;
+        font-weight: bold;
+      }
+    }
+  }
+}
+    
+
+    //   .navigationsub {
+    //     @include span-columns(9,12);
+    //     background-color: $subnav-bgrd;
+    //     margin-top: 60px;
+    //     ul {
+    //       margin: 0;
+    //       list-style-type: none;
+    //       li {
+    //         display: inline-block;
+    //         margin: 0 auto 1em auto;
+    //       }
+    //     }
+    //   }
+
+
+
+//     } 
+
+//     footer { 
+//       clear: both; 
+//     }
+
+
+
+
+
+//   .content {
+//     // content spans the final (omega) 9 columns of 12.
+//     @include span-columns(9 omega,12);
+
+//     // main content spans 6 of those 9 columns.
+//     .main { @include span-columns(6,9); }
+
+//     // secondary content spans the final 3 (omega) of 9 columns.
+//     .secondary { @include span-columns(3 omega,9); }
+//   }
+
+
+
+
+
+
+

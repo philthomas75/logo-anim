@@ -1,0 +1,24 @@
+#container {  
+  margin: auto;               /* centering */  
+  width: 61em;                /* grid container size */  
+  max-width: 100%;            /* responsive layout */  
+}
+
+.left-sidebar {  
+  float: left;                /* float left */  
+  width: 22.951%;             /* span 3 columns */  
+  margin-right: 1.639%;       /* right gutter */  
+  margin-left: 1.639%;        /* left side gutter */  
+}
+
+.main-content {  
+  float: left;                  
+  width: 47.541%;             /* span 6 columns */  
+  margin-right: 1.639%;       
+}
+
+.right-sidebar {  
+  float: right;               /* float right */  
+  width: 22.951%;             /* span 3 columns */  
+  margin-right: 1.639%;       /* right side gutter */  
+}
